@@ -1,0 +1,257 @@
+/*------Main Footer--------*/
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.main-header{
+    background-image: url("images/technology.jpg");
+    background-size: cover;
+    padding: 15px;
+    color: white;
+    text-align: right;
+}
+/*--------Main Navigation------*/
+.main-nav{
+    background: #090C01;
+    overflow: hidden;
+}
+.main-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav ul li{
+    float: left;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    display: inline-block;
+}
+.main-nav ul li a:hover{
+    background-color: #4c5236;
+}
+.main-nav ul li a.active{
+    background-color: #6fbc58;
+}
+.fa{
+    color: lightgray;
+}
+
+/*-------Latest News-----*/
+.fa-smile-o{
+    color: white;
+}
+.Latest-news{
+    background-color: #090C01;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    animation:latest-news 2s infinite linear;
+    overflow: hidden;
+}
+@keyframes Latest-news {
+0%,50%,100%{
+   background-color: #859070;
+    }
+25%,75%{
+    background-color: #090C01;
+       }
+}
+.Latest-news span {
+    color: red;
+}
+
+.Latest-news p{
+    margin: 0;
+    animation: news 14s infinite linear;
+}
+@keyframes news {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+/*----Home News Section-------*/
+.home-news-section{
+    width:1100px ;
+    height: auto;
+    margin-left: 150px;
+}
+.home-news-article {
+    border: 2px solid #090C01;
+    width: 330px;
+    height: 550px;
+    float: left;
+    text-align: center;
+    margin: 5px;
+    border-radius: 20px;
+    transition: all 1s;
+}
+
+.home-news-article:hover{
+    cursor: pointer;
+    width: 350px;
+    box-shadow: 0 0 15px #090C01;
+}
+.home-news-text{
+    padding: 10px;
+    font-size: 17px;
+}
+.home-news-article img{
+    width: 100%;
+}
+
+/*--------About Us------*/
+.about-section{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+}
+
+.about-article h2{
+    color: #131004;
+    font-size: 25px;
+}
+
+.company-images img{
+    width: 270px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+/*-----Break-----*/
+.break{
+    clear: both;
+}
+
+
+
+/*-----Main Footer-------*/
+.main-footer{
+    background-color: #131004;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-footer small, a{
+    color: orange;
+}
+
+/*-------News section-------*/
+.news-section{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+}
+
+.news-article{
+
+}
+
+.news-article h2{
+    background-color: #131004;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px #859070;
+}
+
+.zoom{
+    width: 600px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.zoom img{
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.8;
+    transition: all 1s;
+}
+.zoom:hover img{
+    transform:scale(1.2,1.2);
+    opacity: 1.0;
+}
+.news-article p{
+    font-size: 18px;
+    text-align: center;
+}
+
+/*-------Gallery Section------*/
+.gallery-section{
+    margin-left: 20px;
+}
+
+.gallery-article{
+    border: 2px solid #131004;
+    width: 300px;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+.gallery-article:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 15px #131004;
+}
+.gallery-article img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/*------Contact Section-----*/
+.contact-section{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+.contact-article h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-article p{
+    margin-top: 5px;
+}
+input[type='text'],input[type='email']
+{
+    height: 35px;
+    width: 400px;
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;
+    border: 2px solid #131004;
+    border-radius: 20px;
+}
+textarea{
+    width: 390px;
+    margin: 5px;
+    border:2px solid #131004;
+    border-radius: 20px;
+    text-align: center;
+}
+input[type='text']:focus, input[type='email']:focus,textarea:focus{
+    outline: none;
+}
+
+input[type='submit']{
+    background-color: #131004;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin: 5px;
+    padding: 10px 125px;
+    border-radius: 50px;
+}
